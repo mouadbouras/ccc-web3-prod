@@ -1,7 +1,6 @@
 "use client";
 
 import { FadeIn, FadeInStagger } from "@/lib/faderIn";
-import { motion } from "framer-motion";
 import TeamMember from "./team-member";
 
 export default function Team() {
@@ -9,8 +8,7 @@ export default function Team() {
     {
       name: "Nissue",
       role: "Manager",
-      imageUrl:
-        "/img/team/G7xMQhU2_400x400.jpg",
+      imageUrl: "/img/team/G7xMQhU2_400x400.jpg",
       link: "https://x.com/n1ssue",
       description: (
         <dl className="text-start">
@@ -31,8 +29,7 @@ export default function Team() {
     {
       name: "Can 24",
       role: "Manager",
-      imageUrl:
-        "/img/team/6Fl6OxK5_400x400.jpg",
+      imageUrl: "/img/team/6Fl6OxK5_400x400.jpg",
       link: "https://x.com/0xCan24",
       description: (
         <dl className="text-start">
@@ -52,8 +49,7 @@ export default function Team() {
     {
       name: "Polkaguy",
       role: "Manager",
-      imageUrl:
-        "/img/team/Xj8-U8Jm_400x400.png",
+      imageUrl: "/img/team/Xj8-U8Jm_400x400.png",
       link: "https://x.com/polkaguy",
       description: (
         <dl className="text-start">
@@ -75,8 +71,7 @@ export default function Team() {
     {
       name: "kvs.eth",
       role: "Manager",
-      imageUrl:
-        "/img/team/3oerdAH4_400x400.jpg",
+      imageUrl: "/img/team/3oerdAH4_400x400.jpg",
       link: "https://x.com/kvs_eth",
       description: (
         <dl className="text-start">
@@ -98,8 +93,7 @@ export default function Team() {
     {
       name: "Hoogie",
       role: "Manager",
-      imageUrl:
-        "/img/team/8uA7DQOm_400x400.jpg",
+      imageUrl: "/img/team/8uA7DQOm_400x400.jpg",
       link: "https://x.com/H0ogie",
       description: (
         <dl className="text-start">

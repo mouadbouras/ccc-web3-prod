@@ -83,7 +83,7 @@ export default function Services() {
     <FadeIn>
       <div
         id="services"
-        className="bg-zinc-900 py-24 w-full sm:py-32 border-y border-tulip-400/20 "
+        className="bg-zinc-950 py-24 w-full sm:py-32 border-y border-tulip-400/20 "
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">

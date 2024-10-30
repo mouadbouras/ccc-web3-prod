@@ -7,6 +7,7 @@ import { FONT_MAJOR_MONO, FONT_ORBITRON } from "@/fonts/fonts";
 
 const navigation = [
   { name: "seRVices", href: "services" },
+  { name: "TesTiMOniALs", href: "testimonials" },
   { name: "AffiLiATions", href: "affiliations" },
   { name: "TeaM", href: "team" },
   { name: "HiGHLiGHTs", href: "highlights" },

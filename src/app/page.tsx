@@ -6,6 +6,7 @@ import { Icons } from "@/components/icons";
 import Layout from "@/components/layout";
 import Services from "@/components/services";
 import Team from "@/components/team";
+import Testimonials from "@/components/testimonials";
 import Tweets from "@/components/tweets";
 
 export default async function Home() {
@@ -19,6 +20,7 @@ export default async function Home() {
       >
         {/* <Affiliations /> */}
         <Services />
+        <Testimonials />
         <Affiliations />
         <Team />
         <Tweets />
