@@ -1,3 +1,4 @@
+import { FadeIn, FadeInStagger } from "@/lib/faderIn";
 import Image from "next/image";
 
 const testimonials = [
@@ -42,48 +43,54 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div
-      id="testimonials"
-      className="bg-zinc-900 py-24 w-full sm:py-32 border-y border-tulip-400/20 "
-    >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="mt-2 text-balance text-3xl font-semibold tracking-tight text-tulip-400 sm:text-4xl">
-            What clients say about CCC
-          </p>
-        </div>
-        <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-          <div className="-mt-8 sm:-mx-4 sm:columns-1 sm:text-[0] lg:columns-2">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="pt-8 sm:inline-block sm:w-full sm:px-4 "
-              >
-                <figure className="rounded-2xl bg-zinc-950 p-8 text-sm/6 border border-tulip-400/20">
-                  <blockquote className="text-gray-300">
-                    <p>{`“${testimonial.body}”`}</p>
-                  </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-x-4 ">
-                    <Image
-                      width={40}
-                      height={40}
-                      alt=""
-                      src={testimonial.author.imageUrl}
-                      className="h-10 w-10 rounded-full bg-gray-50"
-                    />
-                    <div>
-                      <div className="font-semibold text-white">
-                        {testimonial.author.name}
-                      </div>
-                      <div className="text-gray-500">{`${testimonial.author.handle}`}</div>
-                    </div>
-                  </figcaption>
-                </figure>
+    <FadeIn>
+      <div
+        id="testimonials"
+        className="bg-zinc-900 py-24 w-full sm:py-32 border-y border-tulip-400/20 "
+      >
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="mt-2 text-balance text-3xl font-semibold tracking-tight text-tulip-400 sm:text-4xl">
+              What clients say about CCC
+            </p>
+          </div>
+          <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+            <FadeInStagger faster>
+              <div className="-mt-8 sm:-mx-4 sm:columns-1 sm:text-[0] lg:columns-2">
+                {testimonials.map((testimonial) => (
+                  <div
+                    key={testimonial.id}
+                    className="pt-8 sm:inline-block sm:w-full sm:px-4 "
+                  >
+                    <FadeIn>
+                      <figure className="rounded-2xl bg-zinc-950 p-8 text-sm/6 border border-tulip-400/20">
+                        <blockquote className="text-gray-300">
+                          <p>{`“${testimonial.body}”`}</p>
+                        </blockquote>
+                        <figcaption className="mt-6 flex items-center gap-x-4 ">
+                          <Image
+                            width={40}
+                            height={40}
+                            alt=""
+                            src={testimonial.author.imageUrl}
+                            className="h-10 w-10 rounded-full bg-gray-50"
+                          />
+                          <div>
+                            <div className="font-semibold text-white">
+                              {testimonial.author.name}
+                            </div>
+                            <div className="text-gray-500">{`${testimonial.author.handle}`}</div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </FadeIn>
+                  </div>
+                ))}
               </div>
-            ))}
+            </FadeInStagger>
           </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }
