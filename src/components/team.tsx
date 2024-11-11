@@ -7,7 +7,7 @@ export default function Team() {
   const people = [
     {
       name: "Nissue",
-      role: "Manager",
+      role: "Founder",
       imageUrl: "/img/team/G7xMQhU2_400x400.jpg",
       link: "https://x.com/n1ssue",
       description: (
@@ -25,10 +25,31 @@ export default function Team() {
         </dl>
       ),
     },
-
+    {
+      name: "Hoogie",
+      role: "Founder",
+      imageUrl: "/img/team/8uA7DQOm_400x400.jpg",
+      link: "https://x.com/H0ogie",
+      description: (
+        <dl className="text-start">
+          <dd>
+            15 years of experience in IT, managing projects, products,
+            portfolios and organizations
+          </dd>
+          <dd className="mt-3">
+            6 years of Web3 activities including KOL marketing, collaboration
+            and managing Discord communities.
+          </dd>
+          <dd className="mt-3">
+            CCC WEB3 Top Content Creation Marketing Brand, Creators NExus, Mana
+            Labs
+          </dd>
+        </dl>
+      ),
+    },
     {
       name: "Can 24",
-      role: "Manager",
+      role: "Lead Manager",
       imageUrl: "/img/team/6Fl6OxK5_400x400.jpg",
       link: "https://x.com/0xCan24",
       description: (
@@ -42,28 +63,6 @@ export default function Team() {
           </dd>
           <dd className="mt-3">
             Experienced Collab Management a network that can reach anywhere.
-          </dd>
-        </dl>
-      ),
-    },
-    {
-      name: "Polkaguy",
-      role: "Manager",
-      imageUrl: "/img/team/Xj8-U8Jm_400x400.png",
-      link: "https://x.com/polkaguy",
-      description: (
-        <dl className="text-start">
-          <dd>
-            KOL/Content Marketing Manager, CCC Web3 top content creation
-            marketing brand
-          </dd>
-          <dd className="mt-3">
-            Founder, Alpha Syndicate a huge community for alpha, networking &
-            growth
-          </dd>
-          <dd className="mt-3">
-            Researcher, analyst, Investor with more than four years of crypto
-            experience.
           </dd>
         </dl>
       ),
@@ -90,28 +89,7 @@ export default function Team() {
         </dl>
       ),
     },
-    {
-      name: "Hoogie",
-      role: "Manager",
-      imageUrl: "/img/team/8uA7DQOm_400x400.jpg",
-      link: "https://x.com/H0ogie",
-      description: (
-        <dl className="text-start">
-          <dd>
-            15 years of experience in IT, managing projects, products,
-            portfolios and organizations
-          </dd>
-          <dd className="mt-3">
-            6 years of Web3 activities including KOL marketing, collaboration
-            and managing Discord communities.
-          </dd>
-          <dd className="mt-3">
-            CCC WEB3 Top Content Creation Marketing Brand, Creators NExus, Mana
-            Labs
-          </dd>
-        </dl>
-      ),
-    },
+
     // {
     //   name: "Stefan Savevski",
     //   role: "Creators",
@@ -182,7 +160,7 @@ export default function Team() {
           <FadeInStagger>
             <ul
               role="list"
-              className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 place-items-center"
+              className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 place-items-center"
             >
               {people.map((person, index) => (
                 <FadeIn key={person.name}>
