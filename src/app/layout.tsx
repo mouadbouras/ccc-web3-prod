@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { FONT_ORBITRON } from "@/fonts/fonts";
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Content Creator Circle",
   description:
@@ -32,6 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body className={`${FONT_ORBITRON.className} dark`}>{children}</body>
     </html>
   );
